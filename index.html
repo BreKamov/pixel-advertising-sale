@@ -1,133 +1,117 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="it">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299.77">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vendita Pixel 500k</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+    }
+    h1 { margin: 0; }
+    canvas {
+        border: 1px solid #333;
+        margin-top: 20px;
+        image-rendering: pixelated;
+    }
+    .instructions { margin: 20px 0; font-size: 1.2em; }
+    .buy-button {
+        display: inline-block;
+        padding: 12px 25px;
+        font-size: 1.2em;
+        color: white;
+        background-color: #ff6600;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+    .buy-button:hover { background-color: #e65c00; }
+    .total { font-size: 1.2em; margin-top: 10px; }
+    footer { margin-top: 30px; padding: 20px; background-color: #333; color: white; }
+</style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="it"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1">&lt;title&gt;Vendita Pixel 500k&lt;/title&gt;</p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>background-color: #f8f8f8;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>background-color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>padding: 20px 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h1 { margin: 0; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>canvas {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>border: 1px solid #333;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>margin-top: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>image-rendering: pixelated;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.instructions { margin: 20px 0; font-size: 1.2em; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.buy-button {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>padding: 12px 25px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>font-size: 1.2em;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>background-color: #ff6600;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>margin-top: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.buy-button:hover { background-color: #e65c00; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.total { font-size: 1.2em; margin-top: 10px; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer { margin-top: 30px; padding: 20px; background-color: #333; color: white; }</p>
-<p class="p1">&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Compra i tuoi Pixel!&lt;/h1&gt;</p>
-<p class="p1">&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;p class="instructions"&gt;Clicca sul canvas per selezionare i pixel. Ogni pixel costa 0,10€.&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;canvas id="pixelCanvas" width="1000" height="500"&gt;&lt;/canvas&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="total" id="total"&gt;Totale: 0 €&lt;/div&gt;</p>
-<p class="p1">&lt;a href="#" class="buy-button" id="buyButton"&gt;Acquista Pixel Selezionati&lt;/a&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&amp;copy; 2025 Vendita Pixel. Tutti i diritti riservati.</p>
-<p class="p1">&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p1">const canvas = document.getElementById('pixelCanvas');</p>
-<p class="p1">const ctx = canvas.getContext('2d');</p>
-<p class="p2"><br></p>
-<p class="p1">const pixelSize = 1;</p>
-<p class="p1">const pricePerPixel = 0.10; // Prezzo aggiornato</p>
-<p class="p1">const selectedPixels = new Set();</p>
-<p class="p1">const totalEl = document.getElementById('total');</p>
-<p class="p2"><br></p>
-<p class="p1">// Inizializza canvas grigio</p>
-<p class="p1">ctx.fillStyle = '#ddd';</p>
-<p class="p1">ctx.fillRect(0, 0, canvas.width, canvas.height);</p>
-<p class="p2"><br></p>
-<p class="p1">// Aggiorna totale</p>
-<p class="p1">function updateTotal() {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const total = selectedPixels.size * pricePerPixel;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>totalEl.textContent = `Totale: ${total.toFixed(2)} €`;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">// Click sui pixel</p>
-<p class="p1">canvas.addEventListener('click', (e) =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const rect = canvas.getBoundingClientRect();</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const x = Math.floor((e.clientX - rect.left) / pixelSize);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const y = Math.floor((e.clientY - rect.top) / pixelSize);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const key = `${x},${y}`;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>if (selectedPixels.has(key)) {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>selectedPixels.delete(key);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>ctx.fillStyle = '#ddd';</p>
-<p class="p1"><span class="Apple-converted-space">    </span>} else {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>selectedPixels.add(key);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>ctx.fillStyle = '#ff6600';</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>ctx.fillRect(x * pixelSize, y * pixelSize, pixelSize, pixelSize);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>updateTotal();</p>
-<p class="p1">});</p>
-<p class="p2"><br></p>
-<p class="p1">// Pulsante PayPal</p>
-<p class="p1">document.getElementById('buyButton').addEventListener('click', () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>if (selectedPixels.size === 0) {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>alert('Seleziona almeno un pixel prima di acquistare.');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>return;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const total = (selectedPixels.size * pricePerPixel).toFixed(2);</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// Inserisci qui il tuo ID commerciante PayPal</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const paypalBusiness = "tuoemail@example.com";<span class="Apple-converted-space"> </span></p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// Crea URL PayPal per pagamento singolo</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const paypalURL = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=${encodeURIComponent(paypalBusiness)}&amp;item_name=Pixel+Art&amp;amount=${total}&amp;currency_code=EUR`;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>window.open(paypalURL, '_blank');</p>
-<p class="p1">});</p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<header>
+    <h1>Compra i tuoi Pixel!</h1>
+</header>
+
+<p class="instructions">Clicca sul canvas per selezionare i pixel. Ogni pixel costa 0,10€.</p>
+
+<canvas id="pixelCanvas" width="1000" height="500"></canvas>
+
+<div class="total" id="total">Totale: 0 €</div>
+<a href="#" class="buy-button" id="buyButton">Acquista Pixel Selezionati</a>
+
+<footer>
+    &copy; 2025 Vendita Pixel. Tutti i diritti riservati.
+</footer>
+
+<script>
+const canvas = document.getElementById('pixelCanvas');
+const ctx = canvas.getContext('2d');
+
+const pixelSize = 1;
+const pricePerPixel = 0.10; // Prezzo aggiornato
+const selectedPixels = new Set();
+const totalEl = document.getElementById('total');
+
+// Inizializza canvas grigio
+ctx.fillStyle = '#ddd';
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+// Aggiorna totale
+function updateTotal() {
+    const total = selectedPixels.size * pricePerPixel;
+    totalEl.textContent = `Totale: ${total.toFixed(2)} €`;
+}
+
+// Click sui pixel
+canvas.addEventListener('click', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    const x = Math.floor((e.clientX - rect.left) / pixelSize);
+    const y = Math.floor((e.clientY - rect.top) / pixelSize);
+    const key = `${x},${y}`;
+
+    if (selectedPixels.has(key)) {
+        selectedPixels.delete(key);
+        ctx.fillStyle = '#ddd';
+    } else {
+        selectedPixels.add(key);
+        ctx.fillStyle = '#ff6600';
+    }
+    ctx.fillRect(x * pixelSize, y * pixelSize, pixelSize, pixelSize);
+    updateTotal();
+});
+
+// Pulsante PayPal
+document.getElementById('buyButton').addEventListener('click', () => {
+    if (selectedPixels.size === 0) {
+        alert('Seleziona almeno un pixel prima di acquistare.');
+        return;
+    }
+    const total = (selectedPixels.size * pricePerPixel).toFixed(2);
+    
+    // Inserisci qui il tuo ID commerciante PayPal
+    const paypalBusiness = "tuoemail@example.com"; 
+
+    // Crea URL PayPal per pagamento singolo
+    const paypalURL = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${encodeURIComponent(paypalBusiness)}&item_name=Pixel+Art&amount=${total}&currency_code=EUR`;
+
+    window.open(paypalURL, '_blank');
+});
+</script>
+
 </body>
 </html>
