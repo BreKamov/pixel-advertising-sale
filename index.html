@@ -63,7 +63,7 @@ const canvas = document.getElementById('pixelCanvas');
 const ctx = canvas.getContext('2d');
 
 const pixelSize = 1;
-const pricePerPixel = 0.10; // Prezzo aggiornato
+const pricePerPixel = 0.10; // 10 centesimi
 const selectedPixels = new Set();
 const totalEl = document.getElementById('total');
 
@@ -95,19 +95,19 @@ canvas.addEventListener('click', (e) => {
     updateTotal();
 });
 
-// Pulsante PayPal
+// Pulsante PayPal Metodo B
 document.getElementById('buyButton').addEventListener('click', () => {
     if (selectedPixels.size === 0) {
         alert('Seleziona almeno un pixel prima di acquistare.');
         return;
     }
     const total = (selectedPixels.size * pricePerPixel).toFixed(2);
-    
-    // Inserisci qui il tuo ID commerciante PayPal
-    const paypalBusiness = "tuoemail@example.com"; 
 
-    // Crea URL PayPal per pagamento singolo
-    const paypalURL = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${encodeURIComponent(paypalBusiness)}&item_name=Pixel+Art&amount=${total}&currency_code=EUR`;
+    // Inserisci qui la tua email PayPal
+    const paypalEmail = "bryo46@hotmail.com";
+
+    // Link diretto a PayPal con importo dinamico
+    const paypalURL = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${encodeURIComponent(paypalEmail)}&item_name=Pixel+Art&amount=${total}&currency_code=EUR`;
 
     window.open(paypalURL, '_blank');
 });
